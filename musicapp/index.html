@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+  <section>
+    <div class="container-fluid">
+
+      <!-- left side -->
+      <div class="header bg-black px-4 flex justify-between items-center border-[#3d3d3d] border-b">
+        <div class="sidebar flex items-center">
+          <div class="brand-logo flex items-center border-[#3d3d3d] border-r  py-4 pr-10 ">
+            <div class="logo flex items-center  ">
+              <span class="w-8 h-8 bg-[#66ffec] rounded-full flex items-center justify-center"><box-icon type='solid'
+                  name='music'></box-icon></span>
+              <a href="" class="text-white text-xl ml-2 font-bold">Listen <sup
+                  class="text-[10px] font-normal">TM</sup></a>
+            </div>
+            <div class="night-mode ml-10 cursor-pointer mt-2">
+              <box-icon name='moon' class="fill-[#3d3d3d]"></box-icon>
+            </div>
+          </div>
+          <div class="search-music border-[#3d3d3d] border relative rounded-full ml-10">
+            <input type="text" placeholder="as if it's your last, Solo, Niki"
+              class="bg-transparent outline-none pl-4 pr-10 py-2 placeholder:text-[#8b8a8a] placeholder:text-xs">
+            <div class="s-icon absolute top-2 right-2">
+              <box-icon name='search' class="fill-[#8b8a8a]"></box-icon>
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+
+        <div class="action-area flex items-center">
+          <div class="download-btn bg-[#66ffec] py-1 px-4 flex items-center rounded-full">
+            <span class="mt-2">
+              <box-icon name='download' type='solid'></box-icon>
+            </span>
+            <a href="" class="font-medium ml-2 text-sm">Download Apps</a>
+          </div>
+          <div class="notification mx-10">
+            <a href=""><box-icon name='bell' class="fill-[#8b8a8a] mt-2"></box-icon></a>
+          </div>
+          <div class="profile-pic w-10 h-10 rounded-full relative">
+            <img src="https://avatars.githubusercontent.com/u/112094927?v=4" alt="">
+            <span class="w-2 h-2 bg-green-500 rounded-full absolute bottom-1 right-0"></span>
+          </div> mx-4
+        </div>
+      </div>
+
+      <div class="music-container bg-black">
+        <div class="grid grid-cols-3">
+          <!-- left-sidebar -->
+          <div class="music-navigation flex flex-col justify-between mb-3 py-3 w-[38%] border-[#3d3d3d] border-r h-[100vh] col-span-1">
+            <div class="tp-menu">
+              <ul class="pb-4">
+                <li class="flex items-center cursor-pointer"><span><box-icon name='home-alt'
+                      class="fill-[#8b8a8a]  mx-4  w-5 h-5 mt-2"></box-icon></span>
+                  <a href="http://" target="_blank" rel="noopener noreferrer" class="text-sm text-[#8b8a8a]">Home </a>
+                </li>
+                <li class="flex items-center cursor-pointer"> <span><box-icon name='playlist' type='solid'
+                      class="fill-[#8b8a8a] mx-4 w-5 h-5 mt-2"></box-icon></span>
+                  <a href="http://" target="_blank" rel="noopener noreferrer" class="text-sm text-[#8b8a8a]"> Your
+                    Library </a>
+                </li>
+              </ul>
+
+              <div class="discover-menu px-4 py-4 border-[#3d3d3d] border-t">
+                <span class="text-[#8b8a8a] discover">DISCOVER</span>
+                <div class="dis-menu">
+                  <ul>
+                    <li class="flex items-center cursor-pointer my-3"> <span><box-icon name='user-circle' type='solid'
+                          class="fill-[#8b8a8a]  mr-4  w-5 h-5 mt-2"></box-icon></span>
+                      <a href="" class="text-sm text-[#8b8a8a]">Artist</a>
+                    </li>
+                    <li class="flex items-center cursor-pointer my-3"> <span><box-icon name='album' type='solid'
+                          class="fill-[#8b8a8a]  mr-4  w-5 h-5 mt-2"></box-icon></span>
+                      <a href="" class="text-sm text-[#8b8a8a]">Album</a>
+                    </li>
+                    <li class="flex items-center cursor-pointer my-3"> <span> <box-icon name='playlist' type='solid'
+                          class="fill-[#8b8a8a]  mr-4  w-5 h-5 mt-2"></box-icon></span>
+                      <a href="" class="text-sm text-[#8b8a8a]">Your Playlist</a>
+                    </li>
+                    <li class="flex items-center cursor-pointer my-3"> <span><box-icon name='radio' type='solid'
+                          class="fill-[#8b8a8a]  mr-4  w-5 h-5 mt-2"></box-icon></span>
+                      <a href="" class="text-sm text-[#8b8a8a]">Radio</a>
+                    </li>
+                    <li class="flex items-center cursor-pointer my-3"><span><box-icon name='videos' type='solid'
+                          class="fill-[#8b8a8a]  mr-4  w-5 h-5 mt-2"></box-icon></span>
+                      <a href="" class="text-sm text-[#8b8a8a]">Video</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="premium-try">
+              <div class="pr-box bg-[#66ffec] rounded-md m-3 text-center p-3">
+                <div class="pr-icon">
+                  <box-icon name='badge-dollar' type='solid'></box-icon>
+                </div>
+                <div class="pr-title">
+                  <h4 class="text-xl font-bold">Lister VVIP</h4>
+                </div>
+                <div class="pr-des my-3">
+                  <p class="text-xs">try free 1 month subscription fot the first time</p>
+                </div>
+                <div class="try-btn">
+                  <a href="" class="py-2 px-4 bg-black text-white rounded-full text-xs">Try Free Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="music-collection col-span-2 relative">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/banner1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/banner2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="music-control col-span-1">
+            <h1 class="text-white">hello</h1>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+
+
+  <script type="module" src="main.js"></script>
+
+  <!-- icon install -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
